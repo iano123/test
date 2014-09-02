@@ -16,7 +16,7 @@
         "actionEventListener": {
             "prototype": "montage/core/event/action-event-listener",
             "properties": {
-                "action": "addContent",
+                "action": "addContent ",
                 "handler": {"@": "rangeController"}
             },
             "_dev": {
@@ -45,7 +45,16 @@
             }
         },
         "rangeController": {
-            "prototype": "montage/core/range-controller"
+            "prototype": "montage/core/range-controller",
+            "properties": {
+                "content": [
+                    "",
+                    ""
+                ],
+                "organizedContent": [
+                    ""
+                ]
+            }
         },
         "task1": {
             "prototype": "ui/task.reel",
