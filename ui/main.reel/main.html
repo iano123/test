@@ -13,6 +13,16 @@
                 "element": {"#": "main"}
             }
         },
+        "list": {
+            "prototype": "digit/ui/list.reel",
+            "properties": {
+                "element": {"#": "list"},
+                "contentController": {"@": "rangeController"}
+            }
+        },
+        "rangeController": {
+            "prototype": "montage/core/range-controller"
+        },
         "title": {
             "prototype": "digit/ui/title.reel",
             "properties": {
@@ -25,7 +35,12 @@
 </head>
 <body>
     <div data-montage-id="main" data-montage-skin="light" class="Main">
-        <h1 data-montage-id="title"></h1>
+        <h1 data-montage-id="title">
+
+        </h1>
+        <ul data-montage-id="list">
+            <li></li>
+        </ul>
     </div>
 </body>
 </html>
